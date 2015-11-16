@@ -11,6 +11,7 @@ or contact DCE ([http://curationexperts.com](http://curationexperts.com)).
 ```
 git clone https://github.com/mark-dce/sufia-prod-ubuntu-vagrant.git
 cd sufa-prod-ubuntu-vagrant
+cp group_vars-all group_vars/all
 ```
 3. Start the VM using `vagrant up`
 4. Connect to the demo at http://localhost:8484
