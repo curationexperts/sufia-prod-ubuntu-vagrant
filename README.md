@@ -7,13 +7,16 @@ or contact DCE ([http://curationexperts.com](http://curationexperts.com)).
 
 ### Using this repository
 1. Install VirtualBox and Vagrant on your target machine.
-2. Clone the code to your local machine:
+2. Clone the code to your local machine:  
   ```
   git clone --recursive https://github.com/mark-dce/sufia-prod-ubuntu-vagrant.git
   ```
-3. Change directory into your new project directory
+3. Change directory into your new project directory  
   ```
   cd sufa-prod-ubuntu-vagrant
   ```
 4. Start the VM using `vagrant up`
-5. Connect to the demo at [http://localhost:8484](http://localhost:8484)
+5. You should now have   
+  1. An unconfigured Apache webserver running at: [http://localhost:8484](http://localhost:8484)
+  2. Fedora running at: [http://localhost:2424/fedora](http://localhost:2424/fedora)
+6. You can now clone your hydra-head and deploy it to your VM [More detail to follow]
