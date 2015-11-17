@@ -32,8 +32,10 @@ Vagrant.configure(2) do |config|
     # Customize the amount of memory on the VM:
     vb.memory = 2048
     vb.cpus = 2
-    # vb.customize ['createhd', '--filename', file_to_disk, '--size', 8 * 1024]
-    # vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', file_to_disk]
+    unless File.exist?(file_to_disk)
+        vb.customize ['createhd', '--filename', file_to_disk, '--size', 8 * 1024]
+        vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', file_to_disk]
+    end
   end
 
   # Enable provisioning with Ansible
