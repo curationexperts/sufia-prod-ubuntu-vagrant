@@ -7,8 +7,8 @@
     capistrano_user: vagrant
     capistrano_group: vagrant
   roles:
-    - { role: openjdk1_8 }
     - { role: vagrant-housekeeping, sudo: yes }
+    - { role: openjdk1_8 }
     - { role: ruby }
     - { role: hydra-stack }
     - { role: services }
