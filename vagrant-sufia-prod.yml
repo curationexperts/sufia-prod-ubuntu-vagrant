@@ -2,6 +2,7 @@
   hosts: vagrant
   remote_user: vagrant
   vars:
+    ansible_become_pass: vagrant
     capistrano_user: vagrant
     capistrano_group: vagrant
   roles:
