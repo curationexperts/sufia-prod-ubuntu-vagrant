@@ -53,7 +53,6 @@ Vagrant.configure(2) do |config|
       bundle_path: "~/.bundle"
     }
     ansible.playbook = "vagrant-sufia-prod.yml"
-    # ansible.ask_sudo_pass = true # putting vagrant password in the playbook for now
-    # ansible.start_at_task = "services | install postgresql packages"
+    # ansible.start_at_task = "vagrant-housekeeping | update apt cache"
   end
 end
