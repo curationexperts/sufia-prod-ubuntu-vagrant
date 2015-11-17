@@ -52,7 +52,7 @@ Vagrant.configure(2) do |config|
       rails_env: "production",
       bundle_path: "~/.bundle"
     }
-    ansible.playbook = "vagrant-sufia-prod.yml"
+    ansible.playbook = "hydra-ubuntu/vagrant-sufia-prod.yml"
     ansible.ask_sudo_pass = true
     # ansible.start_at_task = "services | install postgresql packages"
   end
