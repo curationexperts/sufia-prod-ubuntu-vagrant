@@ -9,9 +9,8 @@ or contact DCE ([http://curationexperts.com](http://curationexperts.com)).
 1. Install VirtualBox and Vagrant on your target machine.
 2. Clone the code to your local machine:
 ```
-git clone https://github.com/mark-dce/sufia-prod-ubuntu-vagrant.git
+git clone --recursive https://github.com/mark-dce/sufia-prod-ubuntu-vagrant.git
 cd sufa-prod-ubuntu-vagrant
-cp group_vars-all group_vars/all
 ```
 3. Start the VM using `vagrant up`
-4. Connect to the demo at http://localhost:8484
+4. Connect to the demo at [http://localhost:8484](http://localhost:8484)
