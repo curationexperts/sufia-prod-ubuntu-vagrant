@@ -1,0 +1,5 @@
+# Don't commit Vagrant local configuration
+.vagrant/
+
+# Don't commit locally temporary files
+tmp/
