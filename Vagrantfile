@@ -45,11 +45,8 @@ Vagrant.configure(2) do |config|
   config.vm.provision "ansible" do |ansible|
     #ansible.verbose = 'vvv'
     ansible.extra_vars = {
-      deploy_user: "vagrant",
-      project_dir: "/vagrant",
       server_name: "localhost",
-      rails_env: "production",
-      bundle_path: "~/.bundle"
+      rails_env: "production"
     }
     ansible.playbook = "vagrant-sufia-prod.yml"
     # ansible.start_at_task = "vagrant-housekeeping | update apt cache"
