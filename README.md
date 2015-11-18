@@ -25,10 +25,14 @@ or contact DCE ([http://curationexperts.com](http://curationexperts.com)).
   ```
 7. Set up the application for deployment (this can take 10-30 minutes depending on your machine and connection)
   ```
-  bin/install
+  bin/setup
   ```  
 8. Deploy Sufia to your new VM
   ```
   cap vagrant deploy
   ```
-9. Congratulations, you should now have a running Sufia repository running at [http://localhost:8484](http://localhost:8484)
+9. Restart your machine to load solr, fedora, and apache changes
+  ```
+  vagrant reload
+  ``` 
+10. Congratulations, you should now have a running Sufia repository running at [http://localhost:8484](http://localhost:8484)
