@@ -3,3 +3,6 @@
 
 # Don't commit locally temporary files
 tmp/
+
+# Don't commit Ansible logfile if one was created
+ansible.log
