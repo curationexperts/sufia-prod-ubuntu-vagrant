@@ -1,13 +1,11 @@
 - name: build Sufia vm 
   # provision vagrant box ready for cap deployment of https://github.com/curationexperts/newfia or similar Sufia 6.x project
-  hosts: vagrant
+  hosts: default
   remote_user: vagrant
   vars:
     ansible_become_pass: vagrant
-    capistrano_user: vagrant
-    capistrano_group: vagrant
   roles:
-    - { role: vagrant-housekeeping, sudo: yes }
+    - { role: housekeeping, sudo: yes }
     - { role: openjdk1_8 }
     - { role: ruby }
     - { role: hydra-stack }
