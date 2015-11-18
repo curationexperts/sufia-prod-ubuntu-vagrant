@@ -31,8 +31,8 @@ or contact DCE ([http://curationexperts.com](http://curationexperts.com)).
   ```
   cap vagrant deploy
   ```
-9. Restart your machine to load solr, fedora, and apache changes
+9. Restart your virtual machine
   ```
-  vagrant reload
+  cd .. && vagrant reload
   ``` 
 10. Congratulations, you should now have a running Sufia repository running at [http://localhost:8484](http://localhost:8484)
