@@ -1,3 +1,6 @@
 [submodule "hydra-ubuntu"]
 	path = hydra-ubuntu
 	url = https://github.com/curationexperts/hydra-ubuntu.git
+[submodule "newfia"]
+	path = newfia
+	url = https://github.com/curationexperts/newfia.git

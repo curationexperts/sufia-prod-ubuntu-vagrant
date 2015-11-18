@@ -13,10 +13,22 @@ or contact DCE ([http://curationexperts.com](http://curationexperts.com)).
   ```
 3. Change directory into your new project directory  
   ```
-  cd sufa-prod-ubuntu-vagrant
+  cd sufia-prod-ubuntu-vagrant
   ```
 4. Start the VM using `vagrant up`
 5. You should now have   
   1. An unconfigured Apache webserver running at: [http://localhost:8484](http://localhost:8484)
   2. Fedora running at: [http://localhost:2424/fedora](http://localhost:2424/fedora)
-6. You can now clone your hydra-head and deploy it to your VM [More detail to follow]
+6. Change directory into the application deployment directory
+  ```
+  cd newfia
+  ```
+7. Set up the application for deployment (this can take 10-30 minutes depending on your machine and connection)
+  ```
+  bin/install
+  ```  
+8. Deploy Sufia to your new VM
+  ```
+  cap vagrant deploy
+  ```
+9. Congratulations, you should now have a running Sufia repository running at [http://localhost:8484](http://localhost:8484)
