@@ -13,8 +13,9 @@ Vagrant.configure(2) do |config|
   # https://docs.vagrantup.com.
 
   config.vm.box = "dce-ubuntu-14.04.3-amd64"
-  #config.vm.box_url = "https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/14.04/providers/virtualbox.box"
-
+  # config.vm.box = "ubuntu/trusty64"
+  # config.vm.box_url = "https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/14.04/providers/virtualbox.box"
+    
   # Forwarded port mappings allow access to a specific port on the guest vm
   # from a port on the host machine - to see your vm's port 80, use localhost:8484
   config.vm.network "forwarded_port", guest: 80, host: 8484 # apache
@@ -49,6 +50,6 @@ Vagrant.configure(2) do |config|
       rails_env: "production"
     }
     ansible.playbook = "vagrant-sufia-prod.yml"
-    # ansible.start_at_task = "vagrant-housekeeping | update apt cache"
+    # ansible.start_at_task = "openjdk1_8 | set java version for tomcat"
   end
 end

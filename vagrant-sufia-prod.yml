@@ -5,11 +5,19 @@
   vars:
     ansible_become_pass: vagrant
   roles:
-    - { role: housekeeping, sudo: yes }
+    - { role: vagrant_setup }
+    - { role: packages, sudo: yes }
+    - { role: mount_opt, data_device: /dev/sdb }
     - { role: openjdk1_8 }
+    - { role: set_timezone, sudo: yes }
+    - { role: system_setup, sudo: yes }
+    - { role: capistrano_setup, sudo: yes }
     - { role: ruby }
-    - { role: hydra-stack }
-    - { role: services }
-    - { role: passenger, sudo: yes }
+    - { role: hydra-stack/install, fedora_version: '4.3.0' }
+    - { role: hydra-stack/config-capistrano }
+    - { role: sufia_dependencies/install }
+    - { role: sufia_dependencies/config }
+    - { role: apache-passenger/install, sudo: yes }
+    - { role: apache-passenger/config, sudo: yes }
     - { role: app-config, sudo: yes }
 
