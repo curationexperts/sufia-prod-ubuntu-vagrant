@@ -17,6 +17,8 @@
     - { role: hydra-stack/config-capistrano }
     - { role: sufia_dependencies/install }
     - { role: sufia_dependencies/config }
+    - { role: ffmpeg }
+    - { role: imagemagick }
     - { role: apache-passenger/install, sudo: yes }
     - { role: apache-passenger/config, sudo: yes }
     - { role: app-config, sudo: yes }
