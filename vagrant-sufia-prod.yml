@@ -15,7 +15,7 @@
     - { role: ruby }
     - { role: hydra-stack/install, fedora_version: '4.3.0' }
     - { role: hydra-stack/config-capistrano }
-    - { role: sufia_dependencies/install }
+    - { role: sufia_dependencies/install, fits_version: '0.6.2' }
     - { role: sufia_dependencies/config }
     - { role: ffmpeg }
     - { role: imagemagick }
