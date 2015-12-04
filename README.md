@@ -15,24 +15,11 @@ or contact DCE ([http://curationexperts.com](http://curationexperts.com)).
   ```
   cd sufia-prod-ubuntu-vagrant
   ```
-4. Start the VM using `vagrant up`
-5. You should now have   
-  1. An unconfigured Apache webserver running at: [http://localhost:8484](http://localhost:8484)
-  2. Fedora running at: [http://localhost:2424/fedora](http://localhost:2424/fedora)
-6. Change directory into the application deployment directory
+4. Start the VM using  
   ```
-  cd newfia
+  vagrant up
   ```
-7. Set up the application for deployment (this can take 10-30 minutes depending on your machine and connection)
-  ```
-  bin/setup
-  ```  
-8. Deploy Sufia to your new VM
-  ```
-  cap vagrant deploy
-  ```
-9. Restart your virtual machine
-  ```
-  cd .. && vagrant reload
-  ``` 
-10. Congratulations, you should now have a running Sufia repository running at [http://localhost:8484](http://localhost:8484)
+5. Wait for the provisioning script to complete - this can take some time
+   (30 minutes to a few hours) depending on your internet connection and processor speed
+6. Congratulations, you should now have a running Sufia repository running at  
+   [http://localhost:8484](http://localhost:8484)
