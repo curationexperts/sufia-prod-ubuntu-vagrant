@@ -1,6 +1,3 @@
-[submodule "newfia"]
-	path = newfia
-	url = https://github.com/curationexperts/newfia.git
 [submodule "ansible-hydra"]
 	path = ansible-hydra
 	url = https://github.com/curationexperts/ansible-hydra.git

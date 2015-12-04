@@ -22,4 +22,5 @@
     - { role: apache-passenger/install, sudo: yes }
     - { role: apache-passenger/config, sudo: yes }
     - { role: app-config, sudo: yes }
+    - { role: newfia }
 
